@@ -23,7 +23,7 @@ MyBB 1.8 Plugin to add a privacy policy agreement checkbox into form on contact 
 ------------------------------------
 
 This plugin offers full language support.
-The basic package contains english files.
+The basic package contains english language files.
 
 
 Licensed under the GNU GPL, version 3.
