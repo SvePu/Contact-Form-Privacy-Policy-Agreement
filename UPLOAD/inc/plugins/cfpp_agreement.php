@@ -65,7 +65,7 @@ function cfpp_agreement_install()
     $templates = array(
         'contact_privacy_policy' => '<tr>
     <td class="trow1">&nbsp;</td>
-    <td class="trow1" valign="top"><input type="checkbox" class="checkbox" name="cfpp_agreement" id="cfpp_agreement" value="1" /><label for="cfpp_agreement">{$lang->cfpp_agreement_simple}</label></td>
+    <td class="trow1" valign="top"><input type="checkbox" class="checkbox" name="cfpp_agreement" id="cfpp_agreement" value="1" />&nbsp;<label for="cfpp_agreement">{$lang->cfpp_agreement_simple}</label></td>
 </tr>'
     );
 
