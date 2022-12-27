@@ -30,6 +30,7 @@ if (defined('THIS_SCRIPT'))
 if (defined('IN_ADMINCP'))
 {
     $plugins->add_hook('admin_config_settings_begin', 'cfpp_agreement_settings');
+    $plugins->add_hook('admin_config_settings_change', 'cfpp_agreement_settings_check');
     $plugins->add_hook("admin_settings_print_peekers", 'cfpp_agreement_peekers');
 }
 else
@@ -180,6 +181,34 @@ function cfpp_agreement_settings()
 {
     global $lang;
     $lang->load('cfpp_agreement', true);
+}
+
+function cfpp_agreement_settings_check()
+{
+    global $mybb;
+
+    if (!$mybb->request_method == "post")
+    {
+        return;
+    }
+    else
+    {
+        global $db, $lang;
+
+        $gid = (int)$mybb->input['gid'];
+
+        $query = $db->simple_select('settinggroups', 'gid', "name = 'cfpp_agreement'", array('limit' => 1));
+        $plugin_gid = $db->fetch_field($query, 'gid');
+
+        if ($gid == (int)$plugin_gid)
+        {
+            if (isset($mybb->input['upsetting']['cfpp_agreement_link']) && strpos($mybb->input['upsetting']['cfpp_agreement_link'], 'contact.php') !== false)
+            {
+                flash_message($lang->error_cfpp_agreement_link, 'error');
+                admin_redirect("index.php?module=config-settings&action=change&gid=" . $gid);
+            }
+        }
+    }
 }
 
 function cfpp_agreement_peekers(&$peekers)

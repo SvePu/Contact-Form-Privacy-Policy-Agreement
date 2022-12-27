@@ -25,6 +25,7 @@ $l['setting_cfpp_agreement_showlink_desc'] = "Wählen Sie JA, um den Link zur Da
 $l['setting_cfpp_agreement_link'] = "Link/Seite der Datenschutzerklärung";
 $l['setting_cfpp_agreement_link_desc'] = "Geben Sie den Link/die Seite zur Datenschutzerklärung ein! (z.Bsp.: datenschutzerklaerung.php)";
 
+$l['error_cfpp_agreement_link'] = "Sie können contact.php nicht als Link setzen, da dies zu einem massiven Konflikt führt!";
 
 // Forum
 $l['cfpp_agreement_simple'] = "<strong>Ja, ich habe die Datenschutzerklärung gelesen und bin damit einverstanden!</strong>";

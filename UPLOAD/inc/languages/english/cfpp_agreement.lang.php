@@ -25,6 +25,7 @@ $l['setting_cfpp_agreement_showlink_desc'] = "Set YES if you include a link to y
 $l['setting_cfpp_agreement_link'] = "Privacy Policy Link";
 $l['setting_cfpp_agreement_link_desc'] = "Enter your privacy policy page link (e.g.: policy.php)";
 
+$l['error_cfpp_agreement_link'] = "You can not set contact.php as link because this will cause a massiv confict!";
 
 // Forum
 $l['cfpp_agreement_simple'] = "<strong>Yes, I've read the privacy policy and I agree!</strong>";
