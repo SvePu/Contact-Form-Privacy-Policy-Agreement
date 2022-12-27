@@ -105,7 +105,7 @@ function cfpp_agreement_install()
         ),
         'showgroups' => array(
             'optionscode' => 'groupselect',
-            'value' => '1'
+            'value' => '-1'
         ),
         'showlink' => array(
             'optionscode' => 'yesno',
@@ -226,7 +226,20 @@ function cfpp_agreement_end()
     if ($mybb->settings['cfpp_agreement_showlink'] == 1 && !empty($mybb->settings['cfpp_agreement_link']))
     {
         $link = trim($mybb->settings['cfpp_agreement_link']);
-        $lang->cfpp_agreement_simple = $lang->sprintf($lang->cfpp_agreement_more, $link);
+        $link = $mybb->get_asset_url($link);
+
+        if (function_exists('get_headers'))
+        {
+            $file_headers = @get_headers($link);
+            if ($file_headers && $file_headers[0] != 'HTTP/1.1 404 Not Found')
+            {
+                $lang->cfpp_agreement_simple = $lang->sprintf($lang->cfpp_agreement_more, $link);
+            }
+        }
+        else
+        {
+            $lang->cfpp_agreement_simple = $lang->sprintf($lang->cfpp_agreement_more, $link);
+        }
     }
 
     eval('$cfpp_agreement = "' . $templates->get('contact_privacy_policy') . '";');
