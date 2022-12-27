@@ -27,7 +27,7 @@ $l['setting_cfpp_agreement_link_desc'] = "Gib den Link/die Seite zur Datenschutz
 
 
 // Forum
-$l['cfpp_agreement_simple'] = "<strong>Ja, ich stimme der Datenschutzerklärung zu!</strong>";
-$l['cfpp_agreement_more'] = "<strong>Ja, ich stimme der <a href=\"{1}\" target=\"_blank\">Datenschutzerklärung</a> zu!</strong>";
+$l['cfpp_agreement_simple'] = "<strong>Ja, ich habe die Datenschutzerklärung gelesen und bin damit einverstanden!</strong>";
+$l['cfpp_agreement_more'] = "<strong>Ja, ich habe die <a href=\"{1}\" target=\"_blank\">Datenschutzerklärung</a> gelesen und bin damit einverstanden!</strong>";
 
 $l['cfpp_agreement_error'] = "Du musst der Datenschutzerklärung zustimmen!";

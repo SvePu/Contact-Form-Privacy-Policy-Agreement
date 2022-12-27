@@ -27,7 +27,7 @@ $l['setting_cfpp_agreement_link_desc'] = "Enter your privacy policy page link (e
 
 
 // Forum
-$l['cfpp_agreement_simple'] = "<strong>Yes, I agree with the privacy policy.</strong>";
-$l['cfpp_agreement_more'] = "<strong>Yes, I agree with the <a href=\"{1}\" target=\"_blank\">privacy policy</a>.</strong>";
+$l['cfpp_agreement_simple'] = "<strong>Yes, I've read the privacy policy and I agree!</strong>";
+$l['cfpp_agreement_more'] = "<strong>Yes, I've read the <a href=\"{1}\" target=\"_blank\">privacy policy</a> and I agree!</strong>";
 
 $l['cfpp_agreement_error'] = "You have to agree the privacy policy!";
