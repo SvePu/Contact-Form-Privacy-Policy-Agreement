@@ -16,7 +16,7 @@ $l['setting_group_cfpp_agreement_desc'] = "Einstellungen des Kontakt Formular Da
 $l['setting_cfpp_agreement_active'] = "Kontakt Formular Datenschutz Zustimmung aktivieren?";
 $l['setting_cfpp_agreement_active_desc'] = "Wähle JA zum aktivieren!";
 
-$l['setting_cfpp_agreement_showgroups'] = "Kontakt Formular Datenschutz Zustimmung für Benutzerbruppen anzeigen.";
+$l['setting_cfpp_agreement_showgroups'] = "Kontakt Formular Datenschutz Zustimmung für Benutzergruppen anzeigen.";
 $l['setting_cfpp_agreement_showgroups_desc'] = "Bestimme die Nutzergruppen, für die diese Regelung gilt. (Halte Shift/Strg gedrückt, um mehr als eine auszuwählen)";
 
 $l['setting_cfpp_agreement_showlink'] = "Link zur Datenschutzerklärung anzeigen?";
@@ -29,6 +29,6 @@ $l['error_cfpp_agreement_link'] = "Du kannst contact.php nicht als Link setzen, 
 
 // Forum
 $l['cfpp_agreement_simple'] = "<strong>Ja, ich habe die Datenschutzerklärung gelesen und bin damit einverstanden!</strong>";
-$l['cfpp_agreement_more'] = "<strong>Ja, ich habe die <a href=\"{1}\" target=\"_blank\">Datenschutzerklärung</a> gelesen und bin damit einverstanden!</strong>";
+$l['cfpp_agreement_more'] = "<strong>Ja, ich habe die <a href=\"{1}\" target=\"_blank\">Datenschutzerklärung</a> gelesen und verstanden!</strong>";
 
 $l['cfpp_agreement_error'] = "Du musst der Datenschutzerklärung zustimmen!";
