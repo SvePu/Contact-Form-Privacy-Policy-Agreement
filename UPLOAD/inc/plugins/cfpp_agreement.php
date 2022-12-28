@@ -51,7 +51,7 @@ function cfpp_agreement_info()
         "website"       => "https://github.com/SvePu/Contact-Form-Privacy-Policy-Agreement",
         "author"        => "SvePu",
         "authorsite"    => "https://github.com/SvePu",
-        "version"       => "1.0",
+        "version"       => "1.1",
         "codename"      => "cfpp_agreement",
         "compatibility" => "18*"
     );
